@@ -23,6 +23,7 @@ let s:yellow = "#F3F99D"
 let s:green = "#5AF78E"
 let s:blue = "#57C7FF"
 let s:lightBlack = "#686868"
+let s:transparent = "none"
 
 " Syntax Groups (descriptions and ordering from `:h w18`)
 
@@ -87,7 +88,7 @@ call s:h("MatchParen", { "fg": s:lightBlack, "gui": "underline" })
 call s:h("ModeMsg", {})
 call s:h("MoreMsg", {})
 call s:h("NonText", { "fg": s:black })
-call s:h("Normal", { "fg": s:white, "bg": s:black })
+call s:h("Normal", { "fg": s:white, "bg": s:transparent })
 call s:h("Pmenu", { "bg": s:green })
 call s:h("PmenuSel", { "fg": s:black, "bg": s:green })
 call s:h("PmenuSbar", { "bg": s:green })
